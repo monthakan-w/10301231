@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+Thai:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+   font-family: "Noto Sans Thai", sans-serif;
+
+    font-weight: 400;
+}
+
+ืnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 0; /* ใส่หน่วย */
+    background-color: #ffffff;
+}
+
+nav option {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px 10px;
+}
+
+main {
+    display: block; /* ❗ เปลี่ยนจาก flex เป็น block */
+    justify-content: unset;
+    align-items: unset;
+}
+
+
+table, th, td {
+  border: 1px solid #000000;
+  padding: 8px 10px;
+  
+}
+
+
+table {
+    width: 100%;
+    max-width: none;
+    margin: 0; /* ไม่เอา margin auto */
+    border-collapse: collapse;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.385);
+}
+
+    
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 6px; /* ปรับตามต้องการ */
+    text-align: center;
+}
+
+th {
+    background-color: #127976;
+    color: #ffffff;
+    padding: 10px; /* ใส่หน่วย */
+    text-align: center;
+}
+
+
+
+td {
+    padding: 6px;
+    text-align: center;
+    font-size: 0.95rem; /* ประมาณ text-sm~base */
+}
+
+
+td ul {
+    margin: 0;
+    padding: 0; /* ใส่หน่วย */
+    list-style-type: disc;
+    padding-left: 30px; /* ใส่หน่วย */
+}
+
