@@ -38,7 +38,7 @@
             class="hover:text-yellow-300 transition-colors duration-200">ปฏิทินการศึกษา</a>
         </li>
         <li>
-          <a href="/TailwindCSS/registration.html"
+          <a href="/TailwindCSS/calendar.html"
             class="hover:text-yellow-300 transition-colors duration-200">ตารางเรียน</a>
         </li>
         <li>
@@ -88,7 +88,7 @@
           </select>
         </div>
 
-        <!-- Dropdown 2 -->
+<!-- Dropdown 2 -->
         <div class="flex flex-col md:flex-row md:items-center w-full md:w-auto">
           <label class="mr-3 text-lg font-medium text-green-800 mb-1 md:mb-0"
             >ปีและภาคการศึกษา</label
@@ -105,20 +105,23 @@
     </div>
 
 <!-- ตาราง     -->
-    <main class="w-full mt-10 mb-5">
-      <div class="overflow-x-auto px-4">
-        <table class="w-full max-w-screen-xl mx-auto text-sm border-collapse">
-          <!-- หัวตาราง -->
-          <tr class="text-white text-2xl tracking-widest">
-            <th>รายการ</th>
-            <th>วันแรก</th>
-            <th>เวลา</th>
-            <th>วันสุดท้าย</th>
-            <th>เวลา</th>
-          </tr>
+    <!-- Desktop Table View -->
+<main class="w-full mt-10 mb-5">
+  <div class="overflow-x-auto px-4 hidden md:block">
+    <table class="w-full max-w-screen-xl mx-auto text-sm border-collapse">
+      <thead>
+        <tr class="text-white text-2xl tracking-widest bg-green-600">
+          <th class="py-2 px-4">รายการ</th>
+          <th class="py-2 px-4">วันแรก</th>
+          <th class="py-2 px-4">เวลา</th>
+          <th class="py-2 px-4">วันสุดท้าย</th>
+          <th class="py-2 px-4">เวลา</th>
+        </tr>
+      </thead>
+      <tbody>
           <!-- ข้อมูลปฏิทิน -->
           <!-- ลงทะเบียนปกติ -->
-          <tr class="bg-yellow-100">
+          <tr class="bg-yellow-50">
             <td class="text-left">ลงทะเบียนปกติ (on-line)</td>
             <td>17 มิถุนายน 2568</td>
             <td>00:01 น.</td>
@@ -159,7 +162,7 @@
             <td>23:59 น.</td>
           </tr>
           <!-- เปิดภาคการศึกษา -->
-          <tr class="text-left bg-yellow-100">
+          <tr class="text-left bg-yellow-50">
             <td class="text-left">วันเปิดภาคการศึกษา</td>
             <td>23 มิถุนายน 2568</td>
             <td>08:00 น.</td>
@@ -167,7 +170,7 @@
             <td>08:00 น.</td>
           </tr>
           <!-- ลงทะเบียน -->
-          <tr class="text-left bg-yellow-100">
+          <tr class="text-left bg-yellow-50">
             <td class="text-left">
               ลงทะเบียนเพิ่ม/ถอน/เปลี่ยนกลุ่ม ( on-line )
             </td>
@@ -201,7 +204,7 @@
             <td>23:59 น.</td>
           </tr>
           <!-- ลงทะเบียนล่าช้า -->
-          <tr class="text-left bg-yellow-100">
+          <tr class="text-left bg-yellow-50">
             <td class="text-left">ลงทะเบียนล่าช้า</td>
             <td>23 มิถุนายน 2568</td>
             <td>08:30 น.</td>
@@ -220,7 +223,7 @@
             <td>16:30 น.</td>
           </tr>
           <!-- ค่าเทอม -->
-          <tr class="text-left bg-yellow-100">
+          <tr class="text-left bg-yellow-50">
             <td class="text-left">
               งวดชำระเงินตามปกติ
               (ชำระเงินที่เคาน์เตอร์ธนาคารกรุงไทยทุกสาขาทั่วประเทศ)
@@ -231,7 +234,7 @@
             <td>20:00 น.</td>
           </tr>
           <!-- ใบแจ้งหนี้จะถูกพิมพ์ผ่านระบบออนไลน์ -->
-          <tr class="text-left bg-yellow-100">
+          <tr class="text-left bg-yellow-50">
             <td class="text-left">ช่วงพิมพ์ใบแจ้งหนี้ผ่าน WEB</td>
             <td>30 มิถุนายน 2568</td>
             <td>08:30 น.</td>
@@ -250,7 +253,7 @@
             <td>16:30 น.</td>
           </tr>
           <!-- สถานภาพการศึกษา -->
-          <tr class="text-left bg-yellow-100">
+          <tr class="text-left bg-yellow-50">
             <td class="text-left">ช่วงของการรักษาสภาพนักศึกษา/ลาพักการศึกษา</td>
             <td>23 มิถุนายน 2568</td>
             <td>08:30 น.</td>
@@ -269,7 +272,7 @@
             <td>16:30 น.</td>
           </tr>
           <!-- สอบกลางภาค -->
-          <tr class="text-left bg-yellow-100">
+          <tr class="text-left bg-yellow-50">
             <td class="text-left">ช่วงวันสอบกลางภาค</td>
             <td>18 สิงหาคม 2568</td>
             <td>08:30 น.</td>
@@ -288,7 +291,7 @@
             <td>16:00 น.</td>
           </tr>
           <!-- วันสุดท้ายการสอน -->
-          <tr class="text-left bg-yellow-100">
+          <tr class="text-left bg-yellow-50">
             <td class="text-left">วันสุดท้ายของการเรียนการสอบ</td>
             <td>12 ตุลาคม 2568</td>
             <td>18:00 น.</td>
@@ -296,7 +299,7 @@
             <td>16:30 น.</td>
           </tr>
           <!-- สอบปลายภาค -->
-          <tr class="text-left bg-yellow-100">
+          <tr class="text-left bg-yellow-50">
             <td class="text-left">ช่วงวันสอบปลายภาค</td>
             <td>14 ตุลาคม 2568</td>
             <td>08:30 น.</td>
@@ -304,7 +307,7 @@
             <td>16:30 น.</td>
           </tr>
           <!-- เปิดเทอม -->
-          <tr class="text-left bg-yellow-100">
+          <tr class="text-left bg-yellow-50">
             <td class="text-left">วันปิดภาคการศึกษา</td>
             <td>28 ตุลาคม 2568</td>
             <td>08:30 น.</td>
@@ -334,7 +337,219 @@
             <td>23:30 น.</td>
           </tr>
         </table>
-      </div>
-    </main>
+</main>
+  <!-- Mobile Card View -->
+<div class="block md:hidden px-4 space-y-4 mt-6">
+    <h2 class="text-xl font-bold text-green-700 text-center">ปฏิทินการศึกษา</h2>
+
+  <div class="bg-yellow-50 rounded-lg shadow p-4 ">
+    <p class="text-base font-semibold text-green-800 mb-2">
+      ลงทะเบียนปกติ (on-line)
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม  :</strong> 17 มิ.ย. 2568 เวลา 00:01 น.<br>
+      <strong>สิ้นสุด : </strong> 20 มิ.ย. 2568 เวลา 23:59 น.
+    </p>
+
+      <p class="text-base font-semibold text-green-800 mb-2 mt-2">
+        นักศึกษาชั้นปีที่ 1
+      </p>
+      <p class="text-sm text-gray-700">
+        <strong>เริ่ม : </strong>18 มิ.ย. 2568 เวลา 00:01 - 23:59 น.
+      </p>
+
+      <p class="text-base font-semibold text-green-800 mb-2 mt-2">
+        นักศึกษาชั้นปีที่ 2
+      </p>
+      <p class="text-sm text-gray-700">
+        <strong>เริ่ม : </strong>19 มิ.ย. 2568 เวลา 08:30 - 23:59 น.
+      </p>
+
+      <p class="text-base font-semibold text-green-800 mb-2 mt-2">
+        ชั้นปีที่ 3-4 และอื่นๆ
+      </p>
+      <p class="text-sm text-gray-700">
+        <strong>เริ่ม : </strong>20 มิ.ย. 2568 เวลา 08:30 - 23:59 น.
+      </p>
+  </div>
+  
+
+  <div class="bg-yellow-50 rounded-lg shadow p-4">
+    <p class="text-base font-semibold text-green-800 mb-2">
+      วันเปิดภาคการศึกษา
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>23 มิ.ย. 2568 เวลา 08:00 น.
+    </p>
+  </div>
+
+
+  <div class="bg-yellow-50 rounded-lg shadow p-4">
+    <p class="text-base font-semibold text-green-800 mb-2">
+      ลงทะเบียนเพิ่ม/ถอน/เปลี่ยนกลุ่ม (on-line)
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong> 23 มิ.ย. 2568 เวลา 08:00 น.<br>
+      <strong>สิ้นสุด : </strong> 25 มิ.ย. 2568 เวลา 23:59 น.
+    </p>
+  
+    <p class="text-base font-semibold text-green-800 mb-2 mt-2">
+      ช่วงวันทำการเพิ่มรายวิชา ลดรายวิชาและเปลี่ยนกลุ่มรายวิชา
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>23 มิ.ย. 2568 เวลา 08:30 น.<br>
+      <strong>สิ้นสุด : </strong>25 มิ.ย. 2568 เวลา 23:59 น.
+
+    <p class="text-base font-semibold text-green-800 mb-2 mt-2">
+      ช่วงลดรายวิชาโดยได้รับค่าหน่วยกิตคืนเต็ม
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>12 มิ.ย. 2568 เวลา 08:30 น.<br>
+      <strong>สิ้นสุด : </strong>25 มิ.ย. 2568 เวลา 23:59 น.
+    </p>
+  </div>
+
+
+  <div class="bg-yellow-50 rounded-lg shadow p-4">
+    <p class="text-base font-semibold text-green-800 mb-2">
+      ลงทะเบียนล่าช้า
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>23 มิ.ย. 2568 เวลา 08:30 น.<br>
+      <strong>สิ้นสุด : </strong>25 มิ.ย. 2568 เวลา 23:59 น.
+    </p>
+
+    <p class="text-base font-semibold text-green-800 mb-2 mt-2">
+      ช่วงการขอเทียบโอนหน่วยกิตนักศึกษาใหม่
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>17 มิ.ย. 2568 เวลา 08:30 น.<br>
+      <strong>สิ้นสุด : </strong>25 มิ.ย. 2568 เวลา 16:30 น.
+    </p>
+  </div>
+ 
+
+  <div class="bg-yellow-50 rounded-lg shadow p-4">
+    <p class="text-base font-semibold text-green-800 mb-2">
+      งวดชำระเงินตามปกติ
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>23 มิ.ย. 2568 เวลา 08:30 น.<br>
+      <strong>สิ้นสุด : </strong>25 มิ.ย. 2568 เวลา 23:59 น.
+    </p>
+
+    <p class="text-base font-semibold text-green-800 mb-2 mt-2">
+      ชำระเงินที่เคาน์เตอร์ธนาคารกรุงไทยทุกสาขาทั่วประเทศ
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>30 มิ.ย. 2568 เวลา 08:30 น.<br>
+      <strong>สิ้นสุด : </strong>6 ก.ค. 2568 เวลา 20:00 น.
+    </p>
+  </div>
+
+
+  <div class="bg-yellow-50 rounded-lg shadow p-4">
+    <p class="text-base font-semibold text-green-800 mb-2">
+      ช่วงพิมพ์ใบแจ้งหนี้ผ่าน WEB
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>30 มิ.ย. 2568 เวลา 08:30 น.<br>
+      <strong>สิ้นสุด : </strong>6 ก.ค. 2568 เวลา 23:59 น.
+    </p>
+
+    <p class="text-base font-semibold text-green-800 mb-2 mt-2">
+      วันแจ้งคาดว่าจะสำเร็จการศึกษาผ่านระบบออนไลน์
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>14 ก.ค. 2568 เวลา 08:30 น.<br>
+      <strong>สิ้นสุด : </strong>14 ต.ค. 2568 เวลา 16:30 น.
+    </p>
+  </div>
+
+
+  <div class="bg-yellow-50 rounded-lg shadow p-4">
+    <p class="text-base font-semibold text-green-800 mb-2">
+      ช่วงของการรักษาสภาพนักศึกษา/ลาพักการศึกษา
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>23 มิ.ย. 2568 เวลา 08:30 น.<br>
+      <strong>สิ้นสุด : </strong>23 ก.ค. 2568 เวลา 16:30 น.
+    </p>
+
+    <p class="text-base font-semibold text-green-800 mb-2 mt-2">
+      วันสุดท้ายของการขอแก้ไขผลการศึกษา I
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>23 ก.ค. 2568 เวลา 16:30 น.<br>
+      <strong>สิ้นสุด : </strong>14 ต.ค. 2568 เวลา 16:30 น.
+    </p>
+  </div>
+
+
+  <div class="bg-yellow-50 rounded-lg shadow p-4">
+    <p class="text-base font-semibold text-green-800 mb-2">
+      ช่วงวันสอบกลางภาค
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>18 ส.ค. 2568 เวลา 08:30 น.<br>
+      <strong>สิ้นสุด : </strong>24 ส.ค. 2568 เวลา 16:30 น.
+    </p>
+
+    <p class="text-base font-semibold text-green-800 mb-2 mt-2">
+      ช่วงวันทำการถอนรายวิชา ( ติด W )
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>7 ก.ค. 2568 เวลา 8:30 น.<br>
+      <strong>สิ้นสุด : </strong>9 ก.ย. 2568 เวลา 16:00 น.
+    </p>
+  </div>
+
+
+  <div class="bg-yellow-50 rounded-lg shadow p-4">
+    <p class="text-base font-semibold text-green-800 mb-2">
+      วันสุดท้ายของการเรียนการสอน
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>12 ต.ค. 2568 เวลา 08:00 น.<br>
+      <strong>สิ้นสุด : </strong>12 ต.ค. 2568 เวลา 16:30 น.
+    </p>
+  </div>
+
+
+  <div class="bg-yellow-50 rounded-lg shadow p-4">
+    <p class="text-base font-semibold text-green-800 mb-2">
+      ช่วงวันสอบปลายภาค
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>14 ต.ค. 2568 เวลา 08:00 น.<br>
+      <strong>สิ้นสุด : </strong>27 ต.ค. 2568 เวลา 16:30 น.
+    </p>
+  </div>
+
+
+  <div class="bg-yellow-50 rounded-lg shadow p-4">
+    <p class="text-base font-semibold text-green-800 mb-2">
+      วันปิดภาคการศึกษา
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>28 ต.ค. 2568 เวลา 08:30 น.<br>
+      <strong>สิ้นสุด : </strong>28 ต.ค. 2568 เวลา 16:30 น.
+    </p>
+
+    <p class="text-base font-semibold text-green-800 mb-2 mt-2">
+      วันสุดท้ายของการส่งผลการศึกษา
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>6 พ.ย. 2568 เวลา 8:30 น.<br>
+      <strong>สิ้นสุด : </strong>6 พ.ย. 2568 เวลา 16:30 น.
+    </p>
+    <p class="text-base font-semibold text-green-800 mb-2 mt-2">
+      วันประกาศผลการศึกษา
+    </p>
+    <p class="text-sm text-gray-700">
+      <strong>เริ่ม : </strong>7 พ.ย. 2568 เวลา 16:30 น.<br>
+      <strong>สิ้นสุด : </strong>7 พ.ย. 2568 เวลา 23:30 น.
+    </p>
+  </div>
   </body>
 </html>

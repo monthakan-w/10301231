@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="monthakan thepsit" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ตารางสอน</title>
+    <link rel="stylesheet" href="calendar.css" /> 
+</head>
+
+<body>
+    <header class="bg-gradient-to-r from-teal-500 to-teal-700 px-4 py-4">
+<!-- ส่วนบน: โลโก้ + ชื่อมหาวิทยาลัย -->
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+<!-- โลโก้และชื่อ -->
+      <div class="flex items-center justify-center md:justify-start mb-4 md:mb-0">
+        <img src="/TailwindCSS/img/MJU_LOGO.svg.png" alt="mju logo" class="w-[70px] h-[70px] mr-4" />
+        <div>
+          <h1 class="text-white text-xl md:text-2xl tracking-widest font-medium">มหาวิทยาลัยแม่โจ้</h1>
+          <h2 class="text-white text-lg md:text-xl tracking-widest font-medium">MAEJO UNIVERSITY</h2>
+        </div>
+      </div>
+    </div>
+
+<!-- เมนู: แนวนอนบน desktop, แนวตั้งบนมือถือ -->
+    <nav>
+      <ul
+        class="flex flex-col md:flex-row text-white text-base md:text-xl space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-6 text-center md:text-left">
+        <li>
+          <a href="/TailwindCSS/index.html" class="hover:text-yellow-300 transition-colors duration-200">หน้าแรก</a>
+        </li>
+        <li>
+          <a href="/TailwindCSS/calendar_t.html"
+            class="hover:text-yellow-300 transition-colors duration-200">ปฏิทินการศึกษา</a>
+        </li>
+        <li>
+          <a href="/TailwindCSS/calendar.html"
+            class="hover:text-yellow-300 transition-colors duration-200">ตารางสอน</a>
+        </li>
+        <li>
+          <a href="/TailwindCSS/grade.html"
+            class="hover:text-yellow-300 transition-colors duration-200">บันทึกเกรดรายบุคล</a>
+        </li>
+        <li>
+          <a href="/TailwindCSS/contact.html"
+            class="hover:text-yellow-300 transition-colors duration-200">ตารางการใช้ห้อง</a>
+        </li>
+        <li>
+          <a href="/TailwindCSS/contact.html"
+            class="hover:text-yellow-300 transition-colors duration-200">ออกจากระบบ</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="w-full mt-10 mb-5 px-4">
+  <!-- Desktop Table -->
+  <div class="overflow-x-auto bg-gray-200 rounded-lg shadow-md p-6 max-w-5xl mx-auto mt-8 hidden md:block">
+    <h1 class="text-2xl md:text-3xl font-bold tracking-widest mb-4 text-green-700">ตารางสอน</h1>
+    <p class="text-gray-700 mb-4">ตารางสอนสำหรับภาคการศึกษานี้</p>
+    
+    <table class="w-full text-sm border-collapse text-center bg-white border border-gray-300">
+      <thead class="text-sm font-semibold text-gray-700 bg-gray-100">
+        <tr>
+          <th class="py-2 px-4 border-b">Day / Time</th>
+          <th class="py-2 px-4 border-b">08:00 - 09:00</th>
+          <th class="py-2 px-4 border-b">09:00 - 10:00</th>
+          <th class="py-2 px-4 border-b">10:00 - 11:00</th>
+          <th class="py-2 px-4 border-b">11:00 - 12:00</th>
+          <th class="py-2 px-4 border-b">12:00 - 13:00</th>
+          <th class="py-2 px-4 border-b">13:00 - 14:00</th>
+          <th class="py-2 px-4 border-b">14:00 - 15:00</th>
+          <th class="py-2 px-4 border-b">15:00 - 16:00</th>
+        </tr>
+      </thead>
+      <tbody class="text-sm text-gray-700">
+        <tr>
+                    <td class="py-2 px-4 border-b font-semibold bg-yellow-50">Monday</td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b bg-green-100" colspan="3">
+                        <b>10301231</b><br>(3) , Lab คอม3-4 105
+                    </td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b"></td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b font-semibold bg-yellow-50">Tuesday</td>
+                    <td class="py-2 px-4 border-b bg-green-100" colspan="3">
+                        <b>10301231</b><br>(3) , Lab คอม3-4 105
+                    </td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b"></td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b font-semibold bg-yellow-50">Wednesday</td>
+                    <td class="py-2 px-4 border-b" colspan="8"></td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b font-semibold bg-yellow-50">Thursday</td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b"></td> 
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b bg-green-100" colspan="2">
+                        <b>10301231</b><br>(3) , Lab คอม3-4 105
+                    </td>  
+                </tr>
+                <tr>
+                    <td class="py-2 px-4 border-b font-semibold bg-yellow-50">Friday</td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b"></td>
+                    <td class="py-2 px-4 border-b bg-green-100" colspan="3">
+                        <b>10301231</b><br>(3) , Lab คอม3-4 105
+                    </td>
+                </tr>
+            </tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <!--  Mobile View: Card per Day -->
+  <div class="block md:hidden space-y-4 mt-4">
+    <h1 class="text-2xl font-bold tracking-widest mb-4 text-green-700 text-center">ตารางสอน</h1>
+
+    <div class="bg-yellow-50 rounded shadow-md p-4">
+      <h2 class="text-lg font-semibold text-green-700 mb-2">วันจันทร์ (Monday)</h2>
+      <ul class="text-sm text-gray-700 space-y-1">
+        <li>
+          <strong>09:00 - 12:00</strong><br>
+          <b>10301231</b><br>
+          Lab คอม3-4 105
+        </li>
+      </ul>
+    </div>
+
+    <div class="bg-yellow-50 rounded shadow-md p-4">
+      <h2 class="text-lg font-semibold text-green-700 mb-2">วันอังคาร (Tuesday)</h2>
+      <ul class="text-sm text-gray-700 space-y-1">
+        <li>
+          <strong>08:00 - 11:00</strong><br>
+          <b>10301231</b><br>
+          Lab คอม3-4 105
+        </li>
+      </ul>
+    </div>
+    
+    <div class="bg-yellow-50 rounded shadow-md p-4">
+      <h2 class="text-lg font-semibold text-green-700 mb-2">วันพุธ (Wednesday)</h2>
+      <ul class="text-sm text-gray-700 space-y-1">
+        <li>ไม่มีเรียน</li>
+      </ul>
+    </div>
+  
+    <div class="bg-yellow-50 rounded shadow-md p-4">    
+        <h2 class="text-lg font-semibold text-green-700 mb-2">วันพฤหัสบดี (Thursday)</h2>
+        <ul class="text-sm text-gray-700 space-y-1">
+            <li>
+            <strong>13:00 - 15:00</strong><br>
+            <b>10301231</b><br>
+            Lab คอม3-4 105
+            </li>
+        </ul>
+    </div>
+  
+    <div class="bg-yellow-50 rounded shadow-md p-4">
+        <h2 class="text-lg font-semibold text-green-700 mb-2">วันศุกร์ (Friday)</h2>
+        <ul class="text-sm text-gray-700 space-y-1">
+            <li>
+            <strong>13:00 - 16:00</strong><br>
+            <b>10301231</b><br>
+            Lab คอม3-4 105
+            </li>
+    </div>
+
+  </div>
+</main>
+
+</body>
+</html>
